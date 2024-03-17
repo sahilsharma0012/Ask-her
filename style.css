@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+}
+
+#gif-box{
+    height: 10vw;
+    width: 10vw;
+    margin-bottom: 2vw;
+}
+
+#gif-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#main h3{
+    font-size: 2vw;
+    font-weight: 500;
+    font-family: cursive;
+}
+
+#main h6{
+    font-size: 1vw;
+    font-weight: 600;
+    font-family: cursive;
+    margin-top: 2vw;
+}
+#answer{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#answer a button{
+    padding: 1vw 2vw;
+    margin: 2vw;
+    background-color: #fff;
+    border: none;
+    color: #000;
+    font-weight: 600;
+    box-shadow: 2px 2px 5px #000;
+    transition: all linear 0.5s;
+}
+
+#answer a button:hover{
+    scale: 0.85;
+}
+
+#answer button a{
+    text-decoration: none;
+}
+
+#yes:hover{
+    background-color: chartreuse;
+    
+}
+
+#no:hover{
+    background-color: tomato;
+}
+
+
+@media (max-width : 700px) {
+    #gif-box{
+        height: 50vw;
+        width: 50vw;
+        margin-bottom: 2vw;
+    }  
+    
+    #main h3{
+        font-size: 6vw;
+        font-weight: 600;
+        font-family: cursive;
+    }
+
+    #main h6{
+        font-size: 4vw;
+        font-weight: 500;
+        font-family: cursive;
+        margin-top: 2vw;
+    }
+
+    #answer{
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    
+#answer a button{
+    padding: 3vw 4vw;
+    margin: 4vw;
+    font-size: 5vw;
+    background-color: #fff;
+    border: none;
+    color: #000;
+    font-weight: 500;
+    box-shadow: 2px 2px 5px #000;
+    transition: all linear 0.3s;
+}
+
+
+#answer a button:hover{
+    scale: 0.85;
+}
+
+#answer button a{
+    text-decoration: none;
+}
+
+#yes:hover{
+    background-color: chartreuse;
+    
+}
+
+#no:hover{
+    background-color: tomato;
+}
+
+
+}
